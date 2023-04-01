@@ -1,0 +1,92 @@
+{
+    "Taj Mahal": {
+        "latitude": 27.1750,
+        "longitude": 78.0422,
+        "description": "The Taj Mahal is an ivory-white marble mausoleum on the right bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan, to house the tomb of his favorite wife, Mumtaz Mahal.",
+        "price": {
+            "foreign": 1300,
+            "indian": 50
+        },
+        "route": "The Taj Mahal can be easily reached by taxi or bus from Agra."
+    },
+    "Red Fort": {
+        "latitude": 28.6562,
+        "longitude": 77.2410,
+        "description": "The Red Fort is a historic fort in the city of Delhi in India. It was built in the 17th century by the Mughal Emperor Shah Jahan and is a UNESCO World Heritage site.",
+        "price": {
+            "foreign": 600,
+            "indian": 40
+        },
+        "route": "The Red Fort is located in the heart of Delhi and can be easily reached by metro or taxi."
+    },
+    "Hawa Mahal": {
+        "latitude": 26.9239,
+        "longitude": 75.8267,
+        "description": "Hawa Mahal is a palace in Jaipur, India, famous for its unique architecture and honeycomb-like structure. It was built in 1799 by Maharaja Sawai Pratap Singh.",
+        "price": {
+            "foreign": 300,
+            "indian": 50
+        },
+        "route": "Hawa Mahal is located in the heart of Jaipur and can be easily reached by public transportation."
+    },
+    "Amer Fort": {
+        "latitude": 26.9855,
+        "longitude": 75.8513,
+        "description": "Amer Fort is a fort located in Amer, Rajasthan, India. It was built in the late 16th century by Raja Man Singh I and is known for its impressive architecture.",
+        "price": {
+            "foreign": 500,
+            "indian": 25
+        },
+        "route": "Amer Fort is located in the outskirts of Jaipur and can be reached by taxi or bus."
+    },
+    "Gateway of India": {
+        "latitude": 18.9217,
+        "longitude": 72.8349,
+        "description": "The Gateway of India is an arch monument built during the 20th century in Bombay, India. The monument was erected to commemorate the landing of King George V and Queen Mary at Apollo Bunder on their visit to India in 1911.",
+        "price": {
+            "foreign": 200,
+            "indian": 10
+        },
+        "route": "The Gateway of India is located in the Colaba district of Mumbai and can be easily reached by taxi or bus."
+    },
+    "Jama Masjid": {
+        "latitude": 28.6507,
+        "longitude": 77.2334,
+        "description": "Jama Masjid is a large mosque in Old Delhi, built in the 17th century by Mughal Emperor Shah Jahan. It is one of the largest mosques in India.",
+        "price": {
+            "foreign": 200,
+            "indian": 0
+        },
+        "route": "Jama Masjid is located in Old Delhi and can be easily reached by metro or taxi."
+    },
+    "Ajanta Caves": {
+        "latitude": 20.5527,
+        "longitude": 75.7032,
+        "description": "Ajanta Caves are ancient Buddhist rock-cut cave monuments located in Aurangabad, Maharashtra, India. The caves were carved out of the rock between the 2nd century BC and the 6th century AD.",
+        "price": {
+            "foreign": 500,
+            "indian": 30
+        },
+        "route": "The Ajanta Caves are located about 100 kilometers from Aurangabad and can be reached by taxi or bus."
+    },
+    "Charminar": {
+        "latitude": 17.3616,
+        "longitude": 78.4747,
+        "description": "Charminar is a historic monument located in the city of Hyderabad, Telangana, India. It was built in 1591 by Muhammad Quli Qutb Shahi to commemorate the end of the plague epidemic in the city.",
+        "price": {
+            "foreign": 200,
+            "indian": 25
+        },
+        "route": "Charminar is located in the heart of Hyderabad and can be easily reached by public transportation."
+    },
+    "Qutub Minar": {
+        "latitude": 28.5244,
+        "longitude": 77.1855,
+        "description": "Qutub Minar is a towering minaret located in Delhi, built in the early 13th century. It is made of red sandstone and marble and is a popular tourist attraction in India.",
+        "price": {
+            "foreign": 600,
+            "indian": 40
+        },
+        "route": "Qutub Minar is located in the south of Delhi and can be easily reached by metro or taxi."
+    }
+}

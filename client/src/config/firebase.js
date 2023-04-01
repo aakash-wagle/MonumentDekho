@@ -1,5 +1,9 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+<<<<<<< HEAD
+=======
+// import { getAnalytics } from "firebase/analytics";
+>>>>>>> 079f215 (Updated Payments)
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
