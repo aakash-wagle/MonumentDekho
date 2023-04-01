@@ -22,7 +22,6 @@ const MonumentDetailsCard = () => {
         <div className='font-medium text-5xl text-center'>{"Name of Monument"}</div>
         <div className='font-medium text-2xl'>{"Description of monument"}</div>
         <div className='font-medium text-2xl'>{"Timing of monument"}</div>
-        <div className='font-medium text-2xl'>{"Description of monument"}</div>
         <div className='font-medium text-2xl'>
           <div>{"Routes to reach monument"}</div>
           <div className='font-normal text-lg
