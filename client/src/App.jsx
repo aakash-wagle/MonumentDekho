@@ -15,6 +15,7 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/signup" exact element={<SignUp />} />
           <Route path="/login" exact element={<SignIn />} />
+          {/* <Route path="/monument/" exact element={<SignIn />} /> */}
           <Route path="/payment" exact element={<Payment />} />
           <Route path="/payment-complete" exact element={<Completion />} />
         </Routes>
