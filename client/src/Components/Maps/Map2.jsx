@@ -1,8 +1,9 @@
 import { collection, query, getDocs, where } from "@firebase/firestore";
-import { log } from "console";
+// import { log } from "console";
 import React, { useEffect, useState } from "react";
 import Map, { Marker } from "react-map-gl";
 import { db } from "../../config/firebase";
+import { redirect } from "react-router-dom";
 
 const initialView = {
   longitude: 82.329,
@@ -46,12 +47,9 @@ const Map2 = () => {
           key={monument.id}
           longitude={parseFloat(monument.Coordinates.Longitude)}
           latitude={parseFloat(monument.Coordinates.Latitude)}
-          onClick={(e) => {
-            // If we let the click event propagates to the map, it will immediately close the popup
-            // with `closeOnClick: true`
-            // e.originalEvent.stopPropagation();
-            // Redirect to monument page using useNavigate
-            
+          onClick={() => {
+
+            redirect(`/${monument.id}`)
           }}
           color="red"
         />

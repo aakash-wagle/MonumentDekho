@@ -5,6 +5,7 @@ import Completion from "./Components/Payment/Completion";
 import Payment from "./Components/Payment/Payment";
 import SignUp from "./Components/Auth/SignUp";
 import SignIn from "./Components/Auth/SIgnIn";
+import MonumentDetails from "./Components/MonumentDetails/MonumentDetails";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           {/* <Route path="/monument/" exact element={<SignIn />} /> */}
           <Route path="/payment" exact element={<Payment />} />
           <Route path="/payment-complete" exact element={<Completion />} />
+          <Route element={<MonumentDetails />} />
         </Routes>
       </BrowserRouter>
     </div>
