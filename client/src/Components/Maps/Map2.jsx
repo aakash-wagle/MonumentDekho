@@ -1,9 +1,9 @@
 import { collection, query, getDocs, where } from "@firebase/firestore";
-// import { log } from "console";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Map, { Marker } from "react-map-gl";
 import { db } from "../../config/firebase";
 import { redirect, useNavigate } from "react-router-dom";
+import { MonumentContext } from "../../App";
 
 const initialView = {
   longitude: 82.329,
@@ -13,7 +13,8 @@ const initialView = {
 
 const Map2 = () => {
   // const [viewState, setViewState] = useState(initialViewState);
-  const [monumentList, setMonumentList] = useState([]);
+  // const [monumentList, setMonumentList] = useState([]);
+  const { monumentList, setMonumentList } = useContext(MonumentContext);
 
   const monumentsRef = collection(db, "monument");
 
@@ -24,7 +25,9 @@ const Map2 = () => {
         ...doc.data(),
         id: doc.id,
       }));
-      setMonumentList(filteredData);
+      setMonumentList(()=>{
+        console.log("setstate called");
+        return filteredData});
       console.log(filteredData);
     } catch (err) {
       console.error(err);
@@ -35,7 +38,7 @@ const Map2 = () => {
     getMonumentList();
   }, []);
 
-  const nav = useNavigate()
+  const navigate = useNavigate()
 
   return (
     <Map
@@ -44,13 +47,13 @@ const Map2 = () => {
       style={{ width: 700, height: 650 }}
       mapStyle="mapbox://styles/mapbox/streets-v11"
     >
-      {monumentList.map((monument) => (
+      {monumentList.map((monument, index) => (
         <Marker
           key={monument.id}
           longitude={parseFloat(monument.Coordinates.Longitude)}
           latitude={parseFloat(monument.Coordinates.Latitude)}
           onClick={() => {
-            return nav(`/${monument.id}`)
+            return navigate(`/monument/${monument.id}`)
           }}
           color="red"
         />
