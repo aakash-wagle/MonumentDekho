@@ -3,7 +3,7 @@ import { collection, query, getDocs, where } from "@firebase/firestore";
 import React, { useEffect, useState } from "react";
 import Map, { Marker } from "react-map-gl";
 import { db } from "../../config/firebase";
-import { redirect } from "react-router-dom";
+import { redirect, useNavigate } from "react-router-dom";
 
 const initialView = {
   longitude: 82.329,
@@ -35,6 +35,8 @@ const Map2 = () => {
     getMonumentList();
   }, []);
 
+  const nav = useNavigate()
+
   return (
     <Map
       mapboxAccessToken={import.meta.env.VITE_MAP_KEY}
@@ -48,8 +50,7 @@ const Map2 = () => {
           longitude={parseFloat(monument.Coordinates.Longitude)}
           latitude={parseFloat(monument.Coordinates.Latitude)}
           onClick={() => {
-
-            redirect(`/${monument.id}`)
+            return nav(`/${monument.id}`)
           }}
           color="red"
         />
